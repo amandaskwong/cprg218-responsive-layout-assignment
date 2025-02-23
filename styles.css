@@ -32,6 +32,7 @@ figure img {
 aside {
     background-color: #97bf04;
     padding: 2em;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
@@ -59,5 +60,22 @@ footer {
         max-width: 300px;
         width: 100%;
         height: 100%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    figure {
+        flex: 60%;
+    }
+
+    aside {
+        flex-basis: 40%;
+    }
     }
 }
